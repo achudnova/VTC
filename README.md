@@ -1,4 +1,4 @@
-# VTC
+# VTC [Vocabulary Trainer written in C]
 
 Simple CLI application for learning vocabulary. This tool allows you to create new dictionaries, add and remove words.
 
