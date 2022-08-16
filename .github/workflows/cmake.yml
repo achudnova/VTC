@@ -43,7 +43,7 @@ jobs:
       run: tar -czvf vtc.tar.gz  vtc
 
     - name: Upload
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v3
       with:
-        path: ./vtc.tar.gz
+        path: ${{github.workspace}}/build/vtc.tar.gz
         name: vtc.tar.gz
