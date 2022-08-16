@@ -2,13 +2,17 @@
 
 Simple CLI application for learning vocabulary. This tool allows you to create new dictionaries, add/remove words and test yourself :)
 
+## Usage
+<img src="https://user-images.githubusercontent.com/91697580/184724365-97cd6622-a628-4162-8c1f-dfc8ce89f6d1.gif" width="500">
+
+## Installation
+To install VTC, just download the latest `vtc.tar.gz` release from [release page](https://github.com/achudnova/VTC/releases/tag/v1.0.2) for your operating system. Currently only **macOS** is supported.
+
 ## Compiling program
+You can also install the program from the Source Code Package.
 ```
 gcc main.c -o main
 ```
-
-## Usage
-<img src="https://user-images.githubusercontent.com/91697580/184724365-97cd6622-a628-4162-8c1f-dfc8ce89f6d1.gif" width="500">
 
 
 ## License
