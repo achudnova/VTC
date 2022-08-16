@@ -45,5 +45,5 @@ jobs:
     - name: Upload
       uses: actions/upload-artifact@v1
       with:
-        path: ./ vtc.tar.gz
-        name:  vtc.tar.gz
+        path: ./vtc.tar.gz
+        name: vtc.tar.gz
