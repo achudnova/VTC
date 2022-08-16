@@ -35,3 +35,12 @@ jobs:
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: ctest -C ${{env.BUILD_TYPE}}
       
+    - name: Pack
+      working-directory: ${{github.workspace}}/build
+      run: cmake -E tar cJfv ../${{ matrix.config.artifact}} .
+
+    - name: Upload
+      uses: actions/upload-artifact@v1
+      with:
+        path: ./${{matrix.config.artifact}}
+        name: ${{matrix.config.artifact}}
