@@ -40,10 +40,10 @@ jobs:
       
     - name: Pack
       working-directory: ${{github.workspace}}/build
-      run: tar -czvf ${{matrix.config.artifact}}.tar.gz ${{matrix.config.artifact}}
+      run: tar -czvf vtc.tar.gz  vtc
 
     - name: Upload
       uses: actions/upload-artifact@v1
       with:
-        path: ./${{matrix.config.artifact}}.tar.gz
-        name: ${{matrix.config.artifact}}.tar.gz
+        path: ./ vtc.tar.gz
+        name:  vtc.tar.gz
