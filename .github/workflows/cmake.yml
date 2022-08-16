@@ -53,4 +53,4 @@ jobs:
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
-        files: vtc.tar.gz
+        files: ${{github.workspace}}/build/vtc.tar.gz
